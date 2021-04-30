@@ -5,40 +5,40 @@
   font-weight: normal;
   font-family: "Playfair Display";
   font-style: normal;
-  src: url("../../../fonts/PlayfairDisplay-Regular.eot");
-  src: url("../../../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../../../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-weight: bold;
   font-family: "Nunito";
   font-style: normal;
-  src: url("../../../fonts/Nunito-Bold.eot");
-  src: url("../../../fonts/Nunito-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Nunito-Bold.woff2") format("woff2"), url("../../../fonts/Nunito-Bold.woff") format("woff"), url("../../../fonts/Nunito-Bold.ttf") format("truetype");
+  src: url("../fonts/Nunito-Bold.eot");
+  src: url("../fonts/Nunito-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Bold.woff2") format("woff2"), url("../fonts/Nunito-Bold.woff") format("woff"), url("../fonts/Nunito-Bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-weight: normal;
   font-family: "Nunito";
   font-style: normal;
-  src: url("../../../fonts/Nunito-Regular.eot");
-  src: url("../../../fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Nunito-Regular.woff2") format("woff2"), url("../../../fonts/Nunito-Regular.woff") format("woff"), url("../../../fonts/Nunito-Regular.ttf") format("truetype");
+  src: url("../fonts/Nunito-Regular.eot");
+  src: url("../fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-weight: bold;
   font-family: "Playfair Display";
   font-style: normal;
-  src: url("../../../fonts/PlayfairDisplay-Bold.eot");
-  src: url("../../../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../../../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../../../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplay-Bold.eot");
+  src: url("../fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-weight: normal;
   font-family: "Nunito";
   font-style: italic;
-  src: url("../../../fonts/Nunito-Italic.eot");
-  src: url("../../../fonts/Nunito-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/Nunito-Italic.woff2") format("woff2"), url("../../../fonts/Nunito-Italic.woff") format("woff"), url("../../../fonts/Nunito-Italic.ttf") format("truetype");
+  src: url("../fonts/Nunito-Italic.eot");
+  src: url("../fonts/Nunito-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito-Italic.woff2") format("woff2"), url("../fonts/Nunito-Italic.woff") format("woff"), url("../fonts/Nunito-Italic.ttf") format("truetype");
   font-display: swap;
 }
 /*--------------------
@@ -429,7 +429,7 @@ a {
 .section-hero {
   position: relative;
   margin-bottom: 49px;
-  background-image: url("../../img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -437,7 +437,7 @@ a {
   position: absolute;
   width: 100%;
   min-height: 602px;
-  background-image: url("../../img/hero-blue-bg.png");
+  background-image: url("../img/hero-blue-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -494,7 +494,7 @@ a {
   margin-top: 30px;
 }
 .section-hero__inner .section-hero__info .section-hero__btns::before {
-  content: url("../../img/scroll.png");
+  content: url("../img/scroll.png");
   position: absolute;
   top: 5px;
   left: -100px;
@@ -522,7 +522,7 @@ a {
   background-color: #1C2440;
 }
 .benefits__inner .benefits__list::after {
-  content: url("../../img/orange-up-arrow.png");
+  content: url("../img/orange-up-arrow.png");
   position: absolute;
   top: 0;
   right: -105px;
@@ -534,7 +534,7 @@ a {
   margin-bottom: 10px;
 }
 .benefits__inner .benefits__list .benefits__item::before {
-  content: url("../../img/orange-check.png");
+  content: url("../img/orange-check.png");
   position: absolute;
   left: -25px;
 }
@@ -571,7 +571,7 @@ a {
   color: #1C2440;
 }
 .lorem-ipsum__inner p::before {
-  content: url("../../img/li-1.png");
+  content: url("../img/li-1.png");
   position: absolute;
   top: 0;
   left: -75px;
@@ -594,7 +594,7 @@ a {
   width: 100%;
   height: 100%;
   min-height: 500px;
-  background-image: url("../../img/test-takers-bgmobile.png");
+  background-image: url("../img/test-takers-bgmobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -604,7 +604,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../img/test-takers-bg.png");
+  background-image: url("../img/test-takers-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
@@ -681,7 +681,7 @@ a {
   color: #1C2440;
 }
 .section-form__box .section-form__list .section-form__list-item::before {
-  content: url("../../img/orange-check.png");
+  content: url("../img/orange-check.png");
   position: absolute;
   top: 0;
   left: -20px;
@@ -860,7 +860,7 @@ a {
   position: relative;
 }
 .lists__inner .lists__left .lists__left-box .lists__left-list .lists__left-item::before {
-  content: url("../../../img/orange-star.png");
+  content: url("../img/orange-star.png");
   position: absolute;
   top: 0;
   left: -20px;
@@ -896,7 +896,7 @@ a {
   position: relative;
 }
 .lists__inner .lists__right .lists__right-box .lists__right-list .lists__right-item::before {
-  content: url("../../../img/orange-check.png");
+  content: url("../img/orange-check.png");
   position: absolute;
   top: 0;
   left: -20px;
@@ -938,7 +938,7 @@ a {
 --------------------*/
 .chat {
   padding: 106px 0 105px;
-  background-image: url("../../img/chat-bg.png");
+  background-image: url("../img/chat-bg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -987,7 +987,7 @@ a {
   padding-left: 10px;
 }
 .chat__inner .chat__box .chat__list .chat__list-item::before {
-  content: url("../../img/orange-star.png");
+  content: url("../img/orange-star.png");
   position: absolute;
   top: 0;
   left: -20px;
@@ -1365,7 +1365,7 @@ a {
     width: 100%;
     height: 1000px;
     margin-top: -2px;
-    background-image: url("../../img/chat-bg-mobile.png");
+    background-image: url("../img/chat-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1437,7 +1437,7 @@ a {
     height: 822px;
     margin-top: -300px;
     background-color: #c6cad5;
-    background-image: url("../../img/chat-bg-mobile.png");
+    background-image: url("../img/chat-bg-mobile.png");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
