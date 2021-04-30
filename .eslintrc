@@ -1,0 +1,10 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "extends": "htmlacademy/es5",
+  "rules": {
+    "no-invalid-this": 0
+  }
+}

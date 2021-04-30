@@ -1,0 +1,49 @@
+.benefits__title-box,
+.lorem-ipsum__title-box,
+.section-text__title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .benefits__title,
+  & .lorem-ipsum__title,
+  & .section-text__title {
+    position: relative;
+    max-width: 210px;
+    margin-bottom: 53px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    font-family: @f-family-secondary;
+    text-align: center;
+    color: @f-color-blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: -80px;
+      width: 59px;
+      height: 1px;
+      background-color: @f-color-orange;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -80px;
+      width: 59px;
+      height: 1px;
+      background-color: @f-color-orange;
+    }
+  }
+
+  & .section-text__title {
+    max-width: 523px;
+  }
+
+  & .lorem-ipsum__title {
+    max-width: 300px;
+  }
+}

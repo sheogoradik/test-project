@@ -1,0 +1,10 @@
+{
+  "syntax": "less",
+  "extends": [
+    "stylelint-config-htmlacademy",
+    "stylelint-order-htmlacademy"
+  ],
+  "rules": {
+    "selector-max-id": 1
+  }
+}

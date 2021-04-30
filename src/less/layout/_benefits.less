@@ -1,0 +1,89 @@
+/*--------------------
+  BENEFITS
+--------------------*/
+.benefits {
+  margin-bottom: 102px;
+}
+
+.benefits__inner {
+  & .benefits__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 44px 76px;
+    background-color: @f-color-blue;
+
+    &::after {
+      content: url("../../img/orange-up-arrow.png");
+      position: absolute;
+      top: 0;
+      right: -105px;
+      cursor: pointer;
+    }
+
+    & .benefits__item {
+      position: relative;
+      width: 33.33%;
+      margin-bottom: 10px;
+
+
+      &::before {
+        content: url("../../img/orange-check.png");
+        position: absolute;
+        left: -25px;
+      }
+    }
+  }
+}
+
+/*--------------------
+  MEDIA
+--------------------*/
+
+/*===== max-width: 1400px =====*/
+@media (max-width: 1400px) {
+  .benefits__list::after {
+    display: none;
+  }
+}
+
+/*===== max-width: 991px =====*/
+@media (max-width: 991px) {
+  .benefits__inner {
+    .benefits__list {
+      & .benefits__item {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/*===== max-width: 768px =====*/
+@media (max-width: 768px) {
+  .benefits__inner {
+    .benefits__list {
+      & .benefits__item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*===== max-width: 576px =====*/
+@media (max-width: 576px) {
+  .benefits {
+    overflow-x: hidden;
+  }
+
+  .benefits__inner {
+    & .benefits__title-box {
+      & .benefits__tile {
+        font-size: 25px;
+      }
+    }
+
+    & .benefits__list {
+      padding: 44px 40px;
+    }
+  }
+}

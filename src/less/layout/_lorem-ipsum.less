@@ -1,0 +1,80 @@
+/*--------------------
+  LOREM IPSUM
+--------------------*/
+.lorem-ipsum__inner {
+  & .lorem-ipsum__top-text {
+    margin-left: 65px;
+  }
+
+  & .lorem-ipsum__text-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 65px;
+
+    & .lorem-ipsum__right-text {
+      margin-left: 230px;
+    }
+  }
+
+  & p {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: @f-color-blue;
+
+    &::before {
+      content: url("../../img/li-1.png");
+      position: absolute;
+      top: 0;
+      left: -75px;
+    }
+  }
+}
+
+/*--------------------
+  MEDIA
+--------------------*/
+
+/*===== max-width: 1200px =====*/
+@media (max-width: 1200px) {
+  .lorem-ipsum__inner {
+    & .lorem-ipsum__top-text {
+      margin-top: 80px;
+      margin-left: 0;
+    }
+
+    & p::before {
+      top: -80px;
+      left: 0;
+    }
+
+    & .lorem-ipsum__text-box {
+      flex-direction: column;
+      margin-left: 0;
+
+      & .lorem-ipsum__right-text {
+        margin-left: 0;
+      }
+
+      & p {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+/*===== max-width: 576px =====*/
+@media (max-width: 576px) {
+  .lorem-ipsum {
+    overflow-x: hidden;
+  }
+
+  .lorem-ipsum__inner {
+    & .lorem-ipsum__title-box {
+      & .lorem-ipsum__tile {
+        font-size: 25px;
+      }
+    }
+  }
+}

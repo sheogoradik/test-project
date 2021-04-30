@@ -1,0 +1,50 @@
+/*--------------------
+  SECTION-TEXT
+--------------------*/
+.section-text {
+  padding: 104px 0 130px;
+}
+
+.section-text__text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & p {
+    max-width: 527px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: @f-color-blue;
+  }
+}
+
+/*--------------------
+  MEDIA
+--------------------*/
+
+/*===== max-width: 1200px =====*/
+@media (max-width: 1200px) {
+  .section-text__text-box {
+    flex-direction: column;
+  }
+}
+
+/*===== max-width: 576px =====*/
+@media (max-width: 576px) {
+  .section-text {
+    overflow-x: hidden;
+  }
+
+  .section-text__inner {
+    & .section-text__title-box {
+      & .section-text__title {
+        font-size: 25px;
+
+        &.important {
+          max-width: 235px;
+        }
+      }
+    }
+  }
+}

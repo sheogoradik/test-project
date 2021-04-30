@@ -1,0 +1,124 @@
+/*--------------------
+  SECTION-FORM
+--------------------*/
+
+.section-form {
+  padding: 65px 120px;
+  background-color: @f-color-grey;
+}
+
+.section-form__inner {
+  display: flex;
+  justify-content: space-between;
+
+  & .section-form__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .section-form__title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      font-family: @f-family-secondary;
+      color: @f-color-blue;
+
+      & span {
+        color: @f-color-orange;
+      }
+    }
+  }
+}
+
+.section-form__box {
+  & .section-form__list {
+    margin-left: 40px;
+
+    & .section-form__list-item {
+      position: relative;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: @f-color-blue;
+
+      &::before {
+        content: url("../../img/orange-check.png");
+        position: absolute;
+        top: 0;
+        left: -20px;
+      }
+    }
+  }
+
+  & p {
+    max-width: 555px;
+    margin-left: 40px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: @f-color-blue;
+  }
+}
+
+/*--------------------
+  MEDIA
+--------------------*/
+
+/*===== max-width: 1200px =====*/
+@media (max-width: 1200px) {
+  .section-form {
+    padding: 65px 20px;
+  }
+
+  .section-form__inner {
+    flex-direction: column;
+    justify-content: initial;
+
+    & .section-form__block {
+      order: 1;
+    }
+
+    & .section-form__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/*===== max-width: 576px =====*/
+@media (max-width: 576px) {
+  .section-form {
+    padding: 65px 20px;
+  }
+
+  .section-form__inner {
+    & .section-form__block {
+      & .form {
+        & .form__box {
+          padding: 25px 15px;
+
+          & .select-custom {
+            & .select-custom__header {
+              & .select-custom__current {
+                width: 280px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .section-form__box {
+      & .section-form__list {
+        margin-left: 0;
+      }
+
+      & p {
+        margin-left: 0;
+      }
+    }
+  }
+}

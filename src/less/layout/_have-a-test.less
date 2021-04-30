@@ -1,0 +1,129 @@
+/*--------------------
+  HAVE-A-TEST
+--------------------*/
+
+.have-a-test {
+  padding: 55px 0 65px;
+  background: radial-gradient(48.46% 3418.28% at 42.94% 41.45%, #e1e5ef 0%, #c6cee0 100%), #dfe2ed;
+}
+
+.have-a-test__inner {
+  display: flex;
+  justify-content: space-between;
+
+  & .have-a-test__left {
+    & .have-a-test__title {
+      margin-bottom: 18px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      font-family: @f-family-secondary;
+      color: @f-color-blue;
+
+      & span {
+        color: @f-color-orange;
+      }
+    }
+
+    & .have-a-test__exam-box {
+      display: flex;
+      align-items: center;
+
+      & a + a {
+        margin-left: 14px;
+      }
+
+      & .have-a-test__link {
+        padding: 7px 12px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: @f-color-blue;
+        background-color: @f-color;
+        border: 2px solid rgba(0, 0, 0, 0);
+        transition: 0.3s;
+
+        &:hover {
+          border: 2px solid @f-color-orange;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  & .have-a-test__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    & .have-a-test__right-text {
+      margin-bottom: 13px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: @f-color-blue;
+    }
+
+    & .section-hero__btn.orange-btn {
+      margin-left: 0;
+    }
+  }
+}
+
+/*--------------------
+  MEDIA
+--------------------*/
+
+/*===== max-width: 1200px =====*/
+@media (max-width: 1200px) {
+  .have-a-test__inner {
+    flex-direction: column;
+
+    & .have-a-test__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .have-a-test__exam-box {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      & .have-a-test__link {
+        margin-bottom: 20px;
+      }
+    }
+
+    & .have-a-test__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+/*===== max-width: 576px =====*/
+@media (max-width: 576px) {
+  .have-a-test__inner {
+    & .have-a-test__left {
+      & .have-a-test__exam-box {
+
+        & .have-a-test__link {
+          min-width: 120px;
+          max-width: 120px;
+        }
+
+        & a + a {
+          margin-left: 0;
+        }
+      }
+    }
+
+    & .have-a-test__right {
+      & .have-a-test__right-text {
+        text-align: center;
+      }
+    }
+  }
+}
