@@ -1,5 +1,4 @@
 design/
-build/*
 !build/readme.md
 img/*
 !img/readme.md
